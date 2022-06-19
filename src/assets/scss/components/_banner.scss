@@ -1,0 +1,10 @@
+@use "../abstracts" as *;
+
+body > .banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15%;
+  width: 100%;
+  // background-color: lightsalmon;
+}

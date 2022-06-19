@@ -1,0 +1,39 @@
+@use "../abstracts" as *;
+
+body > .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  // background-color: lightgray;
+  // background-image: url(../../images/hero-background.jpg);
+  // background-size: cover;
+  // background-position: center;
+
+  ::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../../images/hero-background.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+  }
+}
+
+.hero > h1 {
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.hero > h1 > span {
+  display: block;
+  font-size: 15vw;
+}

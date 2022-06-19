@@ -1,0 +1,33 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jknezevic1712/my-portfolio.git"
+  },
+  "author": "Jakov Knežević",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jknezevic1712/my-portfolio/issues"
+  },
+  "homepage": "https://github.com/jknezevic1712/my-portfolio#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "browser-sync": "^2.27.10",
+    "cssnano": "^5.1.12",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rimraf": "^1.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.52.3"
+  }
+}
