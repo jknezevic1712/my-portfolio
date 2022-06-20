@@ -1,50 +1,70 @@
 @use "../abstracts" as *;
 
-body > .portfolio {
+.portfolio {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   height: 100%;
   width: 100%;
-  background-color: lightpink;
+  // transition: all 0.5s ease;
+
+  // &:hover {
+  //   box-shadow: 0 0 15px 15px $bg-dark;
+  // }
 }
 
-.portfolio > .portfolio-image {
+.portfolio-animated {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25%;
-  width: 100%;
+  // flex-wrap: wrap;
+  flex-direction: column;
+  height: 100%;
+  width: 80%;
 
-  img {
-    margin-top: 15%;
-    height: 100%;
-    width: auto;
-    border: 5px solid $clr-darker-bg;
-    box-shadow: 0 0 20px 10px $clr-darker-bg;
-    border-radius: 20%;
+  .portfolio-title {
+
+    h1 {
+      font-size: 3em;
+      font-style: italic;
+    }
   }
-}
-
-.portfolio > .portfolio-content {
-  display: flex;
-  height: 75%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
-  // padding: 2.5%;
-
-  .about_me {
+  
+  .portfolio-image {
     display: flex;
-    height: 80%;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
     width: 100%;
-    flex-wrap: wrap;
+
+    img {
+      margin-top: 15%;
+      height: 100%;
+      width: auto;
+      border: 5px double $bg-dark;
+      // box-shadow: 0 0 20px 10px $bg-dark;
+      // border-radius: 20%;
+    }
+  }
+
+  .portfolio-content {
+    display: flex;
+    height: 75%;
+    width: 100%;
     justify-content: center;
     align-items: center;
     text-align: justify;
-    // gap: 25%;
-    padding: 2.5%;
+
+    .about_me {
+      display: flex;
+      height: 80%;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      text-align: justify;
+      padding: 2.5%;
+    }
   }
 }

@@ -1,16 +1,64 @@
-.experience > .experience-card {
+@use "../abstracts/" as *;
+
+.experience {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  flex-direction: column;
+  height: 150vh;
   width: 100%;
-}
 
-.experience-card > .experience-workplace {
-}
+  .experience-title {
 
-.experience-card > .experience-about {
-}
+    h1 {
+      font-size: 3em;
+      font-style: italic;
+    }
+  }
 
-.experience-card > .experience-time {
+  .experience-animated {
+    display: grid;
+    place-items: center;
+    grid-template-rows: 30% 30% 30%;
+    padding: 0 2.5%;
+    height: 100%;
+    width: 80%;
+    box-shadow: 0 0 10px 5px $bg-dark;
+    margin-bottom: 5%;
+    // transition: all 1s ease;
+
+    // &:hover {
+    //   transform: scale(1.05);
+    //   box-shadow: 0 0 15px 10px $bg-dark;
+    // }
+
+    .experience-card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      height: 100%;
+      width: 100%;
+
+      .experience-workplace {
+
+        h1 {
+          margin: 0.5em 0;
+          border-bottom: 2px solid $bg-darker;
+        }
+      }
+      
+      .experience-about {
+        
+      }
+      
+      .experience-time {
+        margin-top: 5%;
+        padding: 3%;
+        border: 1px solid $bg-darker;
+        border-radius: 50%;
+        background-color: $bg-dark;
+      }
+    }
+  }
 }
