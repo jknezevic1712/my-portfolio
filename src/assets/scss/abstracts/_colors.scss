@@ -1,7 +1,9 @@
-$clr-black: hsl(0, 0%, 20%);
-$clr-blue: hsl(215, 70%, 35%);
-$clr-neon: hsl(315 100% 55%);
+// Text colors
+$ft-black: hsl(0, 0%, 30%);
+$ft-blue: hsl(215, 70%, 35%);
+$ft-neon: hsl(315 100% 55%);
 
-$clr-light-bg: hsl(0, 0%, 95%);
-$clr-darker-bg: hsl(0, 0%, 65%);
-$clr-dark-bg: hsl(0, 0%, 15%);
+// Backgrounds
+$bg-light: hsl(0, 0%, 95%);
+$bg-dark: hsl(0, 0%, 65%);
+$bg-darker: hsl(0, 0%, 15%);
