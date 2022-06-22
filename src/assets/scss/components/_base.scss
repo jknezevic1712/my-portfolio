@@ -24,7 +24,13 @@ body {
   /* display: grid;
   place-items: center;
   grid-template-rows: 30% 10% 1fr; */
-  background: $bg-light;
+  background: $clr-bg;
   font-family: "Balsamiq Sans", cursive;
-  color: $ft-black;
+  color: $clr-text;
+
+  h1 {
+    font-size: 3em;
+    font-style: italic;
+    color: $clr-highlight;
+  }
 }

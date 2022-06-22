@@ -10,7 +10,7 @@
   // transition: all 0.5s ease;
 
   // &:hover {
-  //   box-shadow: 0 0 15px 15px $bg-dark;
+  // box-shadow: 0 0 15px 15px $clr-text;
   // }
 }
 
@@ -23,14 +23,6 @@
   height: 100%;
   width: 80%;
 
-  .portfolio-title {
-
-    h1 {
-      font-size: 3em;
-      font-style: italic;
-    }
-  }
-  
   .portfolio-image {
     display: flex;
     justify-content: center;
@@ -42,8 +34,8 @@
       margin-top: 15%;
       height: 100%;
       width: auto;
-      border: 5px double $bg-dark;
-      // box-shadow: 0 0 20px 10px $bg-dark;
+      border: 5px inset $clr-text;
+      // box-shadow: 0 0 20px 10px $clr-text;
       // border-radius: 20%;
     }
   }

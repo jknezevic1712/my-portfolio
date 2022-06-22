@@ -8,56 +8,47 @@
   height: 150vh;
   width: 100%;
 
-  .experience-title {
-
-    h1 {
-      font-size: 3em;
-      font-style: italic;
-    }
-  }
-
   .experience-animated {
-    display: grid;
-    place-items: center;
-    grid-template-rows: 30% 30% 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0 2.5%;
     height: 100%;
     width: 80%;
-    box-shadow: 0 0 10px 5px $bg-dark;
+    box-shadow: 0 0 10px 5px $clr-text;
     margin-bottom: 5%;
     // transition: all 1s ease;
 
     // &:hover {
     //   transform: scale(1.05);
-    //   box-shadow: 0 0 15px 10px $bg-dark;
+    // box-shadow: 0 0 15px 10px $clr-text;
     // }
 
     .experience-card {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
+      display: grid;
+      place-items: center;
+      grid-template-rows: repeat(3, 33%);
       height: 100%;
       width: 100%;
 
       .experience-workplace {
-
-        h1 {
+        h2 {
           margin: 0.5em 0;
-          border-bottom: 2px solid $bg-darker;
+          border-bottom: 2px solid $clr-text;
         }
       }
-      
+
       .experience-about {
-        
+        color: $clr-text;
       }
-      
+
       .experience-time {
         margin-top: 5%;
         padding: 3%;
-        border: 1px solid $bg-darker;
+        border: 1px solid $clr-highlight;
         border-radius: 50%;
-        background-color: $bg-dark;
+        background-color: $clr-highlight;
+        box-shadow: 0 5px 5px 1px $clr-text;
       }
     }
   }
