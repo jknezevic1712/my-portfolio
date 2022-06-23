@@ -1,8 +1,32 @@
-.footer {
+.contact {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20%;
+  height: 50vh;
   width: 100%;
-  background-color: aqua;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-rows: 20% 80%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 80vw;
+
+  .contact-title {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }

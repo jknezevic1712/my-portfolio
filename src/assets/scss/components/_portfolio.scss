@@ -21,7 +21,7 @@
   // flex-wrap: wrap;
   flex-direction: column;
   height: 100%;
-  width: 80%;
+  width: 80vw;
 
   .portfolio-image {
     display: flex;
@@ -35,8 +35,7 @@
       height: 100%;
       width: auto;
       border: 5px inset $clr-text;
-      // box-shadow: 0 0 20px 10px $clr-text;
-      // border-radius: 20%;
+      box-shadow: -10px 10px 15px 0px $clr-text;
     }
   }
 
@@ -48,7 +47,7 @@
     align-items: center;
     text-align: justify;
 
-    .about_me {
+    .portfolio-about_me {
       display: flex;
       height: 80%;
       width: 100%;
