@@ -21,16 +21,28 @@ body {
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  /* display: grid;
-  place-items: center;
-  grid-template-rows: 30% 10% 1fr; */
   background: $clr-bg;
   font-family: "Balsamiq Sans", cursive;
   color: $clr-text;
+  gap: 5%;
 
   h1 {
     font-size: 3em;
     font-style: italic;
     color: $clr-highlight;
+  }
+
+  a {
+    text-decoration: none;
+    transition: all 0.5s ease;
+  }
+
+  a:visited {
+    color: $clr-highlight;
+  }
+
+  a:hover {
+    color: $clr-highlight;
+    border-bottom: 1px solid $clr-highlight;
   }
 }

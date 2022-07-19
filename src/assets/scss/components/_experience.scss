@@ -27,11 +27,13 @@
     .experience-card {
       display: grid;
       place-items: center;
-      grid-template-rows: repeat(3, 33%);
+      grid-template-rows: 15% 70% 15%;
       height: 100%;
       width: 100%;
 
       .experience-title {
+        height: 100%;
+
         h2 {
           margin: 0.5em 0;
           border-bottom: 2px solid $clr-text;
@@ -39,21 +41,67 @@
       }
 
       .experience-about {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
         color: $clr-text;
       }
 
       .experience-time {
-        color: $clr-highlight;
-        background-color: $clr-bg;
-        border: 2px solid $clr-highlight;
-        box-shadow: -10px 10px 15px 0px $clr-text;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        height: 100%;
 
-        margin-top: 5%;
-        padding: 3%;
-        // border: 1px solid $clr-highlight;
-        border-radius: 50%;
-        // background-color: $clr-highlight;
-        // box-shadow: 0 5px 5px 1px $clr-text;
+        p {
+          height: fit-content;
+          color: $clr-highlight;
+          background-color: $clr-bg;
+          border: 2px solid $clr-highlight;
+          box-shadow: -10px 10px 15px 0px $clr-text;
+          padding: 10%;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+// MEDIA QUERIES
+
+@media (min-width: $breakpoint-m) {
+  .experience {
+    .experience-animated {
+      .experience-card {
+        height: 90%;
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-l) {
+  .experience {
+    height: 200vh;
+
+    .experience-animated {
+      .experience-card {
+        height: 95%;
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-xl) {
+  .experience {
+    height: 250vh;
+
+    .experience-animated {
+      .experience-card {
+        .experience-time {
+          align-items: center;
+        }
       }
     }
   }

@@ -1,0 +1,141 @@
+@use "../abstracts" as *;
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500vh;
+  width: 100vw;
+
+  .projects-container {
+    display: grid;
+    grid-template-rows: 10% 90%;
+    height: 100%;
+    width: 80%;
+
+    .projects-title {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .projects-content_mobile {
+      display: none;
+    }
+
+    .projects-content {
+      display: grid;
+      grid-template-rows: repeat(4, 25%);
+      gap: 5%;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+      .projects-first_project {
+        display: flex;
+        height: 100%;
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .projects-second_project {
+        display: flex;
+        height: 100%;
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .projects-third_project {
+        display: flex;
+        height: 100%;
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .projects-fourth_project {
+        display: flex;
+        height: 100%;
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+// MEDIA QUERIES
+
+@media (max-width: $breakpoint-l) {
+  .projects {
+    height: 85vh;
+
+    .projects-container {
+      .projects-content {
+        display: none;
+      }
+
+      .projects-content_mobile {
+        display: grid;
+        grid-template-rows: repeat(4, 25%);
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+        .projects-first_project {
+          display: flex;
+          flex-direction: column;
+          gap: 5%;
+          width: 100%;
+        }
+
+        .projects-second_project {
+          display: flex;
+          flex-direction: column;
+          gap: 5%;
+          width: 100%;
+        }
+
+        .projects-third_project {
+          display: flex;
+          flex-direction: column;
+          gap: 5%;
+          width: 100%;
+        }
+
+        .projects-fourth_project {
+          display: flex;
+          flex-direction: column;
+          gap: 5%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-xl) {
+  .projects {
+    .projects-container {
+      .projects-content {
+        display: grid;
+        grid-template-rows: repeat(4, 25%);
+        gap: 5%;
+        height: 80%;
+        width: 100%;
+      }
+    }
+
+    .projects-container {
+      .projects-content_mobile {
+        display: none;
+      }
+    }
+  }
+}

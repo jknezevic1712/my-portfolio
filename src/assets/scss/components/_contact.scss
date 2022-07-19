@@ -1,44 +1,70 @@
+@use "../abstracts" as *;
+
 .contact {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50vh;
   width: 100%;
-}
 
-.contact-container {
-  display: grid;
-  grid-template-rows: 20% 60% 20%;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 80vw;
-
-  .contact-title {
-    display: flex;
-    height: 100%;
-    width: 100%;
+  .contact-container {
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
     justify-content: center;
     align-items: center;
-  }
-
-  .contact-content {
-    text-align: justify;
-  }
-
-  .contact-icons {
-    display: flex;
     height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: flex-end;
+    width: 80vw;
 
-    a {
-      width: 85%;
+    .contact-title {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
 
-      img {
-        height: auto;
-        width: inherit;
+    .contact-content {
+      text-align: justify;
+    }
+
+    .contact-icons {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      align-items: flex-end;
+      padding-bottom: 5%;
+
+      a {
+        width: 85%;
+
+        img {
+          height: auto;
+          width: inherit;
+        }
+      }
+    }
+  }
+}
+
+// MEDIA QUERIES
+
+@media (min-width: $breakpoint-m) {
+  .contact {
+    .contact-container {
+      grid-template-rows: 20% 40% 40%;
+
+      .contact-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+      }
+
+      .contact-icons {
+        a {
+          width: 45%;
+        }
       }
     }
   }

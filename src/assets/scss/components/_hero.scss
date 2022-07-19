@@ -1,6 +1,6 @@
 @use "../abstracts" as *;
 
-body > .hero {
+.hero {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,10 +8,6 @@ body > .hero {
   width: 100%;
   position: relative;
   z-index: 1;
-  // background-color: lightgray;
-  // background-image: url(../../images/hero-background.jpg);
-  // background-size: cover;
-  // background-position: center;
 
   ::before {
     content: "";
@@ -26,14 +22,28 @@ body > .hero {
     background-position: center;
     opacity: 0.35;
   }
+
+  h1 {
+    font-size: 7vw;
+    line-height: 2;
+
+    span {
+      display: block;
+      font-size: 20vw;
+    }
+  }
 }
 
-.hero > h1 {
-  font-size: 2rem;
-  line-height: 2;
-}
+// MEDIA QUERIES
 
-.hero > h1 > span {
-  display: block;
-  font-size: 20vw;
+@media (min-width: $breakpoint-m) {
+  .hero {
+    h1 {
+      font-size: 3vw;
+
+      span {
+        font-size: 13vw;
+      }
+    }
+  }
 }
