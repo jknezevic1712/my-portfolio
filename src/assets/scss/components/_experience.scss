@@ -36,7 +36,7 @@
 
         h2 {
           margin: 0.5em 0;
-          border-bottom: 2px solid $clr-text;
+          border-bottom: 2px solid $clr-highlight;
         }
       }
 
@@ -54,6 +54,7 @@
         align-items: flex-start;
         justify-content: center;
         height: 100%;
+        width: 35%;
 
         p {
           height: fit-content;
@@ -76,6 +77,10 @@
     .experience-animated {
       .experience-card {
         height: 90%;
+
+        .experience-time {
+          width: 20%;
+        }
       }
     }
   }
@@ -99,8 +104,31 @@
 
     .experience-animated {
       .experience-card {
+        .experience-title {
+          h2 {
+            border: none;
+
+            &:hover {
+              border-bottom: 2px solid $clr-highlight;
+            }
+          }
+        }
+
         .experience-time {
+          width: 15%;
           align-items: center;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-xxl) {
+  .experience {
+    .experience-animated {
+      .experience-card {
+        .experience-time {
+          width: 10%;
         }
       }
     }
